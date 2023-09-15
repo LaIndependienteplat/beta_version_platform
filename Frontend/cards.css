@@ -1,0 +1,434 @@
+.container_cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.my_card {
+    margin: 1rem;
+    width: 300px;
+    /* height: 650px; */
+    padding: .5rem 1rem;
+    background-color: #f9f9f9;
+    box-shadow: 0 12px 32px 4px rgba(black, .2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: .2s;
+}
+
+.my_card:hover {
+    transform: translateY(-5px);
+}
+
+.title {
+    color: white;
+    margin: 1rem;
+    padding: .5rem 1rem;
+    border-radius: 50px;
+    transition: .2s;
+    cursor: pointer;
+
+}
+
+.title--legendary {
+    background-color: #f4d03f;
+}
+
+.title:hover {
+    box-shadow: 0 0 12px rgba(#f4d03f, .8);
+}
+
+.title--epic {
+    background-color: #8c14fc;
+}
+
+.title:hover {
+    box-shadow: 0 0 12px rgba(#8c14fc, .8);
+}
+
+.title--common {
+    background-color: #2ecc71;
+}
+
+.title:hover {
+    box-shadow: 0 0 12px rgba(#2ecc71, .8);
+}
+
+.desc {
+    text-align: center;
+}
+
+.actions {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.button {
+    padding: .5rem .8rem;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    text-transform: uppercase;
+    outline: 0;
+    transition: background-color .4s, color .4s, transform .1s;
+}
+
+.button:hover {
+    color: white;
+    box-shadow: 0 0 24px rgba(black, .2);
+}
+
+.button:active {
+    transform: scale(0.95);
+    box-shadow: 0 0 16px rgba(black, .3);
+}
+
+.button:hover {
+    background-color: #00b16a;
+}
+
+.button:hover {
+    background-color: #3498db;
+}
+
+.button:hover {
+    background-color: #c0392b;
+}
+
+p {
+    margin-top: 1rem;
+    color: #484848;
+}
+
+a:link,
+a:visited {
+    text-decoration: none;
+    /* color: #2574a9; */
+}
+
+.active {
+    background-color: #00b16a;
+}
+
+
+
+button::-moz-focus-inner {
+    border: 0;
+}
+
+ul li {
+    position: relative;
+    padding-bottom: 10px;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li:before {
+    content: '';
+    position: absolute;
+    border-right: 6px solid white;
+    border-bottom: 6px solid white;
+    width: 10px;
+    height: 10px;
+    top: calc(50% - 4px);
+    left: -20px;
+    transform: translateY(-50%) rotate(-45deg);
+}
+
+.my_card {
+    background-color: #b1c7e2;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    border-left-color: black;
+    border-right-color: black;
+    border-bottom-color: black;
+    /* border-top-width: 0;
+    border-left-width: 0.25em;
+    border-right-width: 0.25em;
+    border-bottom-width: 0.25em;
+    border-style: solid; */
+}
+
+.my_card_descripcion {
+    /* background-image: url("./images/fondo.jpg"); */
+    background-color: #875cb5;
+    /* background-size: 270px 450px; */
+    /* background-repeat: no-repeat; */
+
+    border-radius: 50px;
+    /* border-radius: 50px; */
+    border-top-width: 0;
+    border-left-width: 0.25em;
+    border-right-width: 0.25em;
+    border-bottom-width: 0.25em;
+    /* border-style: solid; */
+}
+
+hr {
+    border: 0;
+    clear:both;
+    display:block;
+    width: 100%;               
+    background-color:#000;
+    height: 1px;
+  }
+
+.my_card_img {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+  /* CSS talk bubble */
+  .talk-bubble {
+      margin: 40px;
+    display: inline-block;
+    position: relative;
+      width: 200px;
+      height: auto;
+      background-color: #1B788B;
+  }
+  .border{
+    border: 8px solid #666;
+  }
+  .round{
+    border-radius: 30px;
+      -webkit-border-radius: 30px;
+      -moz-border-radius: 30px;
+  
+  }
+  
+  /* Right triangle placed top left flush. */
+  .tri-right.border.left-top:before {
+      content: ' ';
+      position: absolute;
+      width: 0;
+      height: 0;
+    left: -40px;
+      right: auto;
+    top: -8px;
+      bottom: auto;
+      border: 32px solid;
+      border-color: #666 transparent transparent transparent;
+  }
+  .tri-right.left-top:after{
+      content: ' ';
+      position: absolute;
+      width: 0;
+      height: 0;
+    left: -20px;
+      right: auto;
+    top: 0px;
+      bottom: auto;
+      border: 22px solid;
+      border-color: #1B788B transparent transparent transparent;
+  }
+  
+  /* Right triangle, left side slightly down */
+  .tri-right.border.left-in:before {
+      content: ' ';
+      position: absolute;
+      width: 0;
+      height: 0;
+    left: -40px;
+      right: auto;
+    top: 30px;
+      bottom: auto;
+      border: 20px solid;
+      border-color: #666 #666 transparent transparent;
+  }
+  .tri-right.left-in:after{
+      content: ' ';
+      position: absolute;
+      width: 0;
+      height: 0;
+    left: -20px;
+      right: auto;
+    top: 38px;
+      bottom: auto;
+      border: 12px solid;
+      border-color: #1B788B #1B788B transparent transparent;
+  }
+  
+  /*Right triangle, placed bottom left side slightly in*/
+  .tri-right.border.btm-left:before {
+      content: ' ';
+      position: absolute;
+      width: 0;
+      height: 0;
+      left: -8px;
+    right: auto;
+    top: auto;
+      bottom: -40px;
+      border: 32px solid;
+      border-color: transparent transparent transparent #666;
+  }
+  .tri-right.btm-left:after{
+      content: ' ';
+      position: absolute;
+      width: 0;
+      height: 0;
+      left: 0px;
+    right: auto;
+    top: auto;
+      bottom: -20px;
+      border: 22px solid;
+      border-color: transparent transparent transparent #1B788B;
+  }
+  
+  /*Right triangle, placed bottom left side slightly in*/
+  .tri-right.border.btm-left-in:before {
+      content: ' ';
+      position: absolute;
+      width: 0;
+      height: 0;
+      left: 30px;
+    right: auto;
+    top: auto;
+      bottom: -40px;
+      border: 20px solid;
+      border-color: #666 transparent transparent #666;
+  }
+  .tri-right.btm-left-in:after{
+      content: ' ';
+      position: absolute;
+      width: 0;
+      height: 0;
+      left: 38px;
+    right: auto;
+    top: auto;
+      bottom: -20px;
+      border: 12px solid;
+      border-color: #1B788B transparent transparent #1B788B;
+  }
+  
+  /*Right triangle, placed bottom right side slightly in*/
+  .tri-right.border.btm-right-in:before {
+      content: ' ';
+      position: absolute;
+      width: 0;
+      height: 0;
+    left: auto;
+      right: 30px;
+      bottom: -40px;
+      border: 20px solid;
+      border-color: #666 #666 transparent transparent;
+  }
+  .tri-right.btm-right-in:after{
+      content: ' ';
+      position: absolute;
+      width: 0;
+      height: 0;
+    left: auto;
+      right: 38px;
+      bottom: -20px;
+      border: 12px solid;
+      border-color: #1B788B #1B788B transparent transparent;
+  }
+  /*
+      left: -8px;
+    right: auto;
+    top: auto;
+      bottom: -40px;
+      border: 32px solid;
+      border-color: transparent transparent transparent #666;
+      left: 0px;
+    right: auto;
+    top: auto;
+      bottom: -20px;
+      border: 22px solid;
+      border-color: transparent transparent transparent #1B788B;
+  
+  /*Right triangle, placed bottom right side slightly in*/
+  .tri-right.border.btm-right:before {
+      content: ' ';
+      position: absolute;
+      width: 0;
+      height: 0;
+    left: auto;
+      right: -8px;
+      bottom: -40px;
+      border: 20px solid;
+      border-color: #666 #666 transparent transparent;
+  }
+  .tri-right.btm-right:after{
+      content: ' ';
+      position: absolute;
+      width: 0;
+      height: 0;
+    left: auto;
+      right: 0px;
+      bottom: -20px;
+      border: 12px solid;
+      border-color: #1B788B #1B788B transparent transparent;
+  }
+  
+  /* Right triangle, right side slightly down*/
+  .tri-right.border.right-in:before {
+      content: ' ';
+      position: absolute;
+      width: 0;
+      height: 0;
+    left: auto;
+      right: -40px;
+    top: 30px;
+      bottom: auto;
+      border: 20px solid;
+      border-color: #666 transparent transparent #666;
+  }
+  .tri-right.right-in:after{
+      content: ' ';
+      position: absolute;
+      width: 0;
+      height: 0;
+    left: auto;
+      right: -20px;
+    top: 38px;
+      bottom: auto;
+      border: 12px solid;
+      border-color: #1B788B transparent transparent #1B788B;
+  }
+  
+  /* Right triangle placed top right flush. */
+  .tri-right.border.right-top:before {
+      content: ' ';
+      position: absolute;
+      width: 0;
+      height: 0;
+    left: auto;
+      right: -40px;
+    top: -8px;
+      bottom: auto;
+      border: 32px solid;
+      border-color: #666 transparent transparent transparent;
+  }
+  .tri-right.right-top:after{
+      content: ' ';
+      position: absolute;
+      width: 0;
+      height: 0;
+    left: auto;
+      right: -20px;
+    top: 0px;
+      bottom: auto;
+      border: 20px solid;
+      border-color: #1B788B transparent transparent transparent;
+  }
+  
+  /* talk bubble contents */
+  .talktext{
+    padding: 1em;
+    text-align: left;
+    line-height: 1.5em;
+  }
+  .talktext p{
+    /* remove webkit p margins */
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+  }
